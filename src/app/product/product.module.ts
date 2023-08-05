@@ -17,6 +17,7 @@ const childRoutes: Route[] = [
     ],
   },
 ];
+console.log('product loaded');
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(childRoutes)],
   declarations: [
