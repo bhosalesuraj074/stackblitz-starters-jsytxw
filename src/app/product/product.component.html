@@ -2,21 +2,22 @@
   <div class="contreiner">
     <ul class="nav">
       <li class="nav-item">
-        <a routerLink="/tv" routerLinkActive="active" class="nav-link">Tv</a>
+        <a routerLink="tv" routerLinkActive="active" class="nav-link">Tv</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/mobile" routerLinkActive="active" class="nav-link"
+        <a routerLink="mobile" routerLinkActive="active" class="nav-link"
           >Mobile</a
         >
       </li>
       <li class="nav-item">
-        <a routerLink="/laptop" routerLinkActive="active" class="nav-link"
+        <a routerLink="laptop" routerLinkActive="active" class="nav-link"
           >Laptop</a
         >
       </li>
     </ul>
   </div>
 </div>
-<div class="justify-content-center text-center">
+<button class="btn btn-success mt-4" (click)="redirectTo()">send Data</button>
+<div class="text-center mt-3">
   <router-outlet></router-outlet>
 </div>
