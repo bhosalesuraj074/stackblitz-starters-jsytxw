@@ -11,7 +11,9 @@
     "@angular/platform-browser": "^16.1.7",
     "@angular/platform-browser-dynamic": "^16.1.7",
     "@angular/router": "^16.1.7",
+    "@popperjs/core": "^2.11.8",
     "@types/jasmine": "^4.3.5",
+    "bootstrap": "^5.3.1",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.1",
     "zone.js": "^0.13.1"
