@@ -2,8 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppCompoent } from './app.component';
 import { Route, RouterModule } from '@angular/router';
-import { LaptopComponent } from './product/laptop/laptop.component';
-const route: Route[] = [{ path: '', component: LaptopComponent }];
+import { HomeComponent } from './home/home.component';
+import { ProductComponent } from './product/product.component';
+const route: Route[] = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'product', component: ProductComponent },
+];
 @NgModule({
   declarations: [AppCompoent],
   imports: [BrowserModule, RouterModule.forRoot(route)],

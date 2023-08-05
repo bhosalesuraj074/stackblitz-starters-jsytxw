@@ -1,3 +1,7 @@
 a {
-  color: blueviolet;
+  color: rgb(226, 43, 80);
+}
+.active {
+  background-color: chocolate;
+  border-radius: 10%;
 }
