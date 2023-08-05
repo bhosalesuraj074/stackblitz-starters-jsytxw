@@ -20,6 +20,15 @@ const childRoutes: Route[] = [
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(childRoutes)],
-  declarations: [],
+  declarations: [
+    ProductComponent,
+    LaptopComponent,
+    TvComponent,
+    MobileComponent,
+  ],
 })
-export class ProductModule {}
+export class ProductModule {
+  constructor() {
+    console.log('product compoent loaded');
+  }
+}

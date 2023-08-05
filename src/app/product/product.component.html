@@ -1,3 +1,22 @@
-<p>
-product works!
-</p>
+<div class="contreiner">
+  <ul class="nav">
+    <li class="nav-item">
+      <a routerLink="/product/tv" routerLinkActive="active" class="nav-link"
+        >Tv</a
+      >
+    </li>
+    <li class="nav-item">
+      <a routerLink="/product/mobile" routerLinkActive="active" class="nav-link"
+        >Mobile</a
+      >
+    </li>
+    <li class="nav-item">
+      <a routerLink="/product/laptop" routerLinkActive="active" class="nav-link"
+        >Laptop</a
+      >
+    </li>
+  </ul>
+</div>
+<div class="justify-content-center">
+  <router-outlet></router-outlet>
+</div>
