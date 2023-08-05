@@ -26,6 +26,7 @@ console.log('product loaded');
     TvComponent,
     MobileComponent,
   ],
+  exports: [RouterModule],
 })
 export class ProductModule {
   constructor() {
