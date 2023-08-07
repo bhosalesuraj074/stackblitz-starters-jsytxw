@@ -21,7 +21,7 @@ const route: Route[] = [
     BrowserModule,
     RouterModule.forRoot(route, { preloadingStrategy: PreloadAllModules }),
   ],
-  bootstrap: [AppCompoent],
+  bootstrap: [AppCompoent],   
   exports: [RouterModule],
 })
 export class AppModule {}
