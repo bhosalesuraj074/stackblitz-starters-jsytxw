@@ -7,7 +7,7 @@
       </div>
 
       <div class="col-md-4 demo2 shadow py-5">
-        <form [formGroup]="myForm">
+        <form [formGroup]="myForm" (ngSubmit)="OnSubmit()">
           <div class="form-group">
             <label for="email">Email</label>
             <input
@@ -27,9 +27,10 @@
               id="password"
               placeholder="enter the password"
               class="form-control"
-              fromControlName="password"
+              formControlName="password"
             />
           </div>
+          <button type="submit" class="btn btn-warning mt-4">Submit</button>
         </form>
       </div>
 
