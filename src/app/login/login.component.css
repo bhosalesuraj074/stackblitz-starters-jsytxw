@@ -1,0 +1,13 @@
+div .demo1 {
+  background-color: blueviolet;
+  color: aliceblue;
+  border-radius: 15px 0px 0px 15px;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.demo2 {
+  background-color: aliceblue;
+  border-radius: 0px 15px 15px 0px;
+}
