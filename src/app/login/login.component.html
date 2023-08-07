@@ -7,7 +7,7 @@
       </div>
 
       <div class="col-md-4 demo2 shadow py-5">
-        <form action="" class="form-group">
+        <form [formGroup]="myForm" class="form-group">
           <div class="form-group">
             <label for="email">Email</label>
             <input
@@ -16,6 +16,7 @@
               id="email"
               placeholder="enter the email"
               class="form-control"
+              formControlName="email"
             />
           </div>
           <div class="form-group">
@@ -26,6 +27,7 @@
               id="password"
               placeholder="enter the password"
               class="form-control"
+              fromControlName="password"
             />
           </div>
         </form>

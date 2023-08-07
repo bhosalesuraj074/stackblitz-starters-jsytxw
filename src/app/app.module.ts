@@ -5,6 +5,7 @@ import { PreloadAllModules, Route, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CatchDataComponent } from './catch-data/catch-data.component';
 import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 const route: Route[] = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -21,6 +22,7 @@ const route: Route[] = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(route, { preloadingStrategy: PreloadAllModules }),
+    ReactiveFormsModule,
   ],
   bootstrap: [AppCompoent],
   exports: [RouterModule],

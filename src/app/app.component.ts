@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['app.component.css'],
 })
 export class AppCompoent implements OnInit {
+ 
   constructor() {}
-  ngOnInit() {}
+  ngOnInit() {
+  
+  }
 }
