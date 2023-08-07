@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppCompoent } from './app.component';
-import { Route, RouterModule } from '@angular/router';
+import { PreloadAllModules, Route, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { CatchDataComponent } from './catch-data/catch-data.component';
@@ -17,7 +17,10 @@ const route: Route[] = [
 ];
 @NgModule({
   declarations: [AppCompoent],
-  imports: [BrowserModule, RouterModule.forRoot(route)],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(route, { preloadingStrategy: PreloadAllModules }),
+  ],
   bootstrap: [AppCompoent],
   exports: [RouterModule],
 })
