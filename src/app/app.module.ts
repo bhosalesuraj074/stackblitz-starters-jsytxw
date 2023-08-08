@@ -22,7 +22,7 @@ const route: Route[] = [
   declarations: [AppCompoent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(route, { preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(route),
     ReactiveFormsModule,
     FormsModule,
   ],

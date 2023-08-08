@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {}
-  OnSubmit() {
+  onSubmit() {
     console.log(this.myForm.controls);
   }
 }
